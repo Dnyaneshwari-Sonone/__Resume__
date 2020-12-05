@@ -1,0 +1,278 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{}{Dnyaneshwari Sonone}{ 
+Final Year B.Tech Undergraduate | Electrical Engineering | IIT Jodhpur\\
+\href{mailto:sonone.1@iitj.ac.in}{sonone.1@iitj.ac.in} | (+91)9588876297
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.32\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Undergraduate (EE)}
+\descript{IIT Jodhpur | Expected 2021}
+\location{\color{headings}CGPA: 9.08/10.0 (Dept Rank 3)}
+\sectionsep
+
+\subsection{Intermediate (HSC)}
+\descript{Jijamata Mahavidyalaya | 2017}
+\location{\color{headings} Percentage: 84.8/100 }
+\sectionsep
+
+\subsection{Matriculation (SSC)}
+\descript{Anuradha-AEMS | 2015}
+\location{\color{headings}Percentage: 97.2/100}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/Dnyaneshwari-Sonone}{\custombold{Dnyaneshwari-Sonone}}\\
+LinkedIn://  \href{https://www.linkedin.com/in/dnyaneshwari-sonone-598139174/}{\custombold{Dnyaneshwari Sonone}}\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+
+\textbullet{} Scored SGPA of \custombold{10/10} in the 4th\\
+\hspace{2.7mm}semester of UG \\
+\textbullet{} Selected for branch change (ME to EE)\\
+\hspace{2.7mm}after 1st year at IIT Jodhpur \\
+\textbullet{} Among top 0.5 \% students in JEE 2017
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+
+\subsection{Programming Languages}
+Proficient: \textbullet{} C/C++\\
+Familiarity: \textbullet{} C\#  \textbullet{}Python  \textbullet{}JavaScript\\
+\sectionsep
+
+\subsection{Web}
+\textbullet{} VueJs, NodeJs, Asp.NET Core (MVC)\\
+\textbullet{} HTML,CSS, BootStrap, Vuetify\\
+\sectionsep
+
+\subsection{Technologies}
+\textbullet{} MATLAB \textbullet{} Git\\
+\textbullet{} Azure Functions \textbullet{} Docker\\
+\textbullet{} Kubernetes-AKS (Beginner)\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Coursework}
+
+\subsection{Undergraduate}
+\location{ongoing*}
+\textbullet{} Computer Graphics*\\
+\textbullet{} Networking*\\
+\textbullet{} Database Systems*\\
+\textbullet{} Artificial Intelligence - 1\\
+\textbullet{} Machine Learning - 1 \\
+\textbullet{} Mathematics for Data Science\\
+\textbullet{} Digital Signal \& Image Processing\\
+\textbullet{} Probability, Statistics and Random\\
+\hspace{2.7mm}Processes\\
+\textbullet{} Digital Logic and Design\\
+\textbullet{} Computer Programming\\
+\sectionsep
+
+\subsection{MOOC}
+\textbullet{} Operating Systems*\\
+\textbullet{} OOPs\\
+\textbullet{} Data Structures and Algorithms\\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{EXPERIENCE}
+
+\runsubsection{MICROSOFT}
+\descript{| Software engineer Intern}
+\location{May - July 2020 | CPE-BPSC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Migrated an E2E WebAPI - Warranty Service from .NET to \custombold{.NET Core} and made it \custombold{resilient} to the external dependency failures using Resiliency library\\
+\item Containerized the Warranty Service and modernized its hosting platform to Azure Kubernetes Services to \custombold{automate}deployment, scaling \& management\\
+\item Technologies: Azure Services, \custombold{Docker Containers,} \custombold{Kubernetes}(Azure hosted)\end{tightemize}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+
+\runsubsection{Image to Image Translation}
+\descript{| Aug - November 2020}
+\location{BTech Project | Guide - Dr. Rajendra Nagar | IIT Jodhpur}
+\begin{tightemize}\item Performed Season transfer to convert images taken in summer season of Yosemite to winter season, using \custombold{Contrastive learning for unpaired translation}\\
+\item Analysed different techniques like pix2pix \& CycleGAN and compared the results obtained with that from CycleGAN method\end{tightemize}
+\sectionsep
+\sectionsep
+
+% \runsubsection{Super Resolution of Noisy Imagess}
+% \descript{| Feb - May 2020}
+% \location{Guide - Dr. Rajendra Nagar | IIT Jodhpur}
+% \begin{tightemize}\item Obtained a noise-free, high resolution image from an observed noisy, low resolution image using image processing\\
+% \item Implemented \custombold{deep image prior algorithm}using scikit and PyTorch libraries\end{tightemize}
+% \sectionsep
+% \sectionsep
+
+\runsubsection{YelpCamp Website}
+\descript{| Feb - April 2020}
+\location{Campground Finding Website | Self Project | Udemy Courses |
+\href{https://github.com/Dnyaneshwari-Sonone/YelpCAmp}{\custombold{Github}}}
+\begin{tightemize}\item Developed basic full stack website for searching, sharing \& reviewing campsites\\
+\item Technologies Used : \custombold{NodeJs,}\custombold{BootStrap,}HTML/CSS  \end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{DevlUp Portfolio Website}
+\descript{| April 2020}
+\location{DevlUp Labs | Open Source Enthusiasts' group IIT Jodhpur |
+\href{https://github.com/devlup-labs/devlup-labs.github.io}{\custombold{Github}}}
+\begin{tightemize}\item Contributed to the front-end devlopment of DevlUp Labs' portfolio website\\
+\item Developed the webpage using \custombold{Vuetify}and HTML/CSS \end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{e-Voting}
+\descript{| Aug 2019}
+\location{Microsoft codefundo++ | Blockchain Voting App | \href{https://github.com/Dnyaneshwari-Sonone/e-voting}{\custombold{Github}}}
+\begin{tightemize}\item Designed a secure real-time voting solution using \custombold{Ethereum Blockchain} \\
+\item Developed the WebApp using JavaScript, Ganache, and Truffle\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{Classification of Mental State}
+\descript{| May - July 2019}
+\location{Guide - Dr. Rajlaxmi Chouhan | IIT Jodhpur}
+\begin{tightemize}\item Designed a machine learning model to classify the mental states of students \\
+\item Trained the classifier using sklearn with feature vectors obtained from EEG signals of the brain using \custombold{Gaussian Naive Bayes}algorithm\end{tightemize}
+\sectionsep
+\sectionsep
+
+\runsubsection{Face Recognition System}
+\descript{| Feb - April 2019}
+\location{BTech Project | Guide - Dr. Rajlaxmi Chouhan | IIT Jodhpur}
+\begin{tightemize}\item Designed and developed a face recognition system to detect and identify the most resembling faces from the given test image using Image Processing\\
+\item Trained with \custombold{eigenfaces, eigenvalues and PCA}approach in \custombold{MATLAB}\end{tightemize}
+\sectionsep
+
+
+%\runsubsection{Image Processing}
+%\descript{| Aug - Nov 2018}
+%\location{Dr. Rajlaxmi Chouhan | IIT Jodhpur}
+%\begin{tightemize}\item Improved quality of an image using enhancement and noise-removal techniques\\
+%\item Implemented various image processing techniques using %\custombold{MATLAB}\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Positions of Responsibility} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item \customboldd{Captain}-Basketball team| AY 2019-2020
+
+\item \customboldd{Secretary}-Hostel Sports| Aug 2018- April 2019
+\end{tightemize} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EXTRA CURRICULARS} 
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item{ Participated in various Competitive Coding Contests}\\
+\item{ Represented IIT Jodhpur Basketball Team in 54th, 53rd and 52nd \custombold{Inter-IIT Sports Meet} held at IIT Kharagpur, IIT Guwahati and IIT Madras respectively}
+\item{ Participated in the \custombold{Virtual BAJA SAEINDIA 2018}}\\
+\end{tightemize}
+
+\end{minipage} 
+\end{document}
+
